@@ -1,0 +1,31 @@
+Question i
+1. Start program
+2. Guide the user to enter the principal amount(p).
+3. Guide the user to enter the interest rate(r).
+4. Guide the user to input the period(p).
+5. Convert the interest rate (r) from a percentage to a decimal by dividing it by 100 and assigning it to a variable (s)
+6. Set A = p * (1 + s * t).
+7. Print A.
+8. End program
+
+Question ii
+1. Start program
+2. Guide the user to input the principal amount(p).
+3. Guide the user to input the interest rate(r). 
+4. Guide the user to enter input the period(t).
+5. Guide the user to input the number of times interest is compounded(n).
+6. Set  A = p * (1 + (r/n)) ** (n*t).
+7. Print A.
+8. End program
+
+Question iii
+1. Start program
+2. Guide the user to input the period(r).
+3. Guide the user to input the interest rate(r).
+4. Guide the user to input the time period(t).
+5. Guide the user to input the number of payments(n).
+6. Calculate the total number of payments(N) as N = n * t
+7. Calculate the interest rate per payments(R) as R = r / n
+8. Calculate the value of (1 + R) raised to the power of N and store it in variable (P) as P = (1 + R) ** N.
+9. Print A
+10.End program
