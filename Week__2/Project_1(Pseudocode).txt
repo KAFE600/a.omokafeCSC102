@@ -1,0 +1,37 @@
+function checkout(items, total_cost, payment_method):
+display(items)
+display("Total cost:", total_cost)
+display("Payment method:", payment_method)
+process_payment(total_cost, payment_method)
+print_receipt(items, total_cost, payment_method)
+
+function process_payment(amount, payment_method):
+if payment_method == "cash":
+get_cash_payment(amount)
+elif payment_method == "credit card":
+process_credit_card(amount)
+else:
+display("Invalid payment method")
+
+function get_cash_payment(amount):
+while true:
+cash = input("Enter cash amount: ")
+if cash < amount:
+display("Insufficient cash. Please enter a larger amount.")
+else:
+display("Change:", cash - amount)
+break
+
+# Process the credit card payment
+function process_credit_card(amount):
+card_number = input("Enter credit card number: ")
+expiration_date = input("Enter expiration date (MM/YY): ")
+cvv = input("Enter CVV: ")
+
+
+# Print the receipt containing the purchased items, total cost, and payment method)
+function print_receipt(items, total_cost, payment_method):
+display("Receipt:")
+display(items)
+display("Total cost:", total_cost)
+display("Payment method:", payment_method)
