@@ -1,0 +1,9 @@
+name1 = "John"
+age1 = 25
+name2 = "Jane"
+age2 = 30
+
+name1, age1, name2, age2 = swap_ages(name1, age1, name2, age2)
+
+print(name1, "is now", age1, "years old")
+print(name2, "is now", age2, "years old")

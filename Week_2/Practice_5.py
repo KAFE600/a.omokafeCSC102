@@ -6,7 +6,7 @@ print(bool(game_1 == game_2))
 print(game_1 == game_2)
 
 #Returns false as val is None
-val == None
+val = None
 print(bool(val))
 
 # Returns false as num is an empty sequence
@@ -15,4 +15,4 @@ print(bool(num))
 
 # Returns true as age is boolean
 age = True
-Print(bool(age))
+print(bool(age))
