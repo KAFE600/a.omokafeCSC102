@@ -1,0 +1,47 @@
+# Define two arrays - one for the girls and one for the boys
+girls = []
+boys = []
+
+# For each girl in the class, create a dictionary that stores her name, age, height, and score.
+for girl in ["Samantha", "Jada", "Jane", "Claire", "Elizabeth", "Mary", "Susan", "Waje", "Taibat", "Lilian"]:
+    girl_dict = {"name": girl, "age": age_value, "height": height_value, "score": score_value}
+    girls.append(girl_dict)
+
+# For each boy in the class, create a dictionary that stores his name, age, height, and score.
+for boy in ["Charles", "Jude", "James", "Kelvin", "Biodun", "Wale", "Kunle", "Matthew", "Tom", "Kayode"]:
+    boy_dict = {"name": boy, "age": age_value, "height": height_value, "score": score_value}
+    boys.append(boy_dict)
+
+# Calculate the average age, height, and score for the girls in the class.
+girl_age_sum = 0
+girl_height_sum = 0
+girl_score_sum = 0
+for girl in girls:
+    girl_age_sum += girl["age"]
+    girl_height_sum += girl["height"]
+    girl_score_sum += girl["score"]
+girl_count = len(girls)
+girl_avg_age = girl_age_sum / girl_count
+girl_avg_height = girl_height_sum / girl_count
+girl_avg_score = girl_score_sum / girl_count
+
+# Calculate the average age, height, and score for the boys in the class.
+boy_age_sum = 0
+boy_height_sum = 0
+boy_score_sum = 0
+for boy in boys:
+    boy_age_sum += boy["age"]
+    boy_height_sum += boy["height"]
+    boy_score_sum += boy["score"]
+boy_count = len(boys)
+boy_avg_age = boy_age_sum / boy_count
+boy_avg_height = boy_height_sum / boy_count
+boy_avg_score = boy_score_sum / boy_count
+
+# Print the average age, height, and score for the girls and boys separately.
+print("Girls average age:", girl_avg_age)
+print("Girls average height:", girl_avg_height)
+print("Girls average score:", girl_avg_score)
+print("Boys average age:", boy_avg_age)
+print("Boys average height:", boy_avg_height)
+print("Boys average score:", boy_avg_score)
